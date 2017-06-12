@@ -1,0 +1,179 @@
+/*style and layout for slider place*/
+/*.sliderText__caption {
+  color: #fefefe;
+  font-family: "League Gothic Regular", "Open Sans", Arial, sans-serif;
+  font-size: 60px;
+}*/
+
+
+@media screen and (min-width:320px) and (max-width:479px) {
+
+  .wrap-slider {
+    position: relative;
+    min-width: 320px;
+    margin-top: 124px;
+  }
+
+  .wrap-slider::before {
+    position: absolute;
+    content: "";
+    display: inline-block;
+    width: 26px;
+    height: 37px;
+    left: 17px;
+    top: 4px;
+    background: url(../img/left-narrow-320.png) center center no-repeat;
+
+  }
+
+  .wrap-slider::after {
+    position: absolute;
+    content: "";
+    display: inline-block;
+    width: 26px;
+    height: 37px;
+    right: 17px;
+    top: 2px;
+    background: url(../img/right-narrow-320.png) center center no-repeat;
+  }
+
+  .sliderText {
+    margin: 0 auto;
+    width: 208px;
+    height: 51px;
+  }
+
+  .sliderText__caption {
+    color: #fefefe;
+    font-family: "League Gothic Regular", "Open Sans", Arial, sans-serif;
+    font-size: 36px;
+    text-shadow: 0 2px 2px rgba(0, 0, 0, 0.3);
+  }
+
+  .sliderText__moto {
+    color: #edbfff;
+    font-family: "League Gothic Regular", "Open Sans", Arial, sans-serif;
+    font-size: 18px;
+  }
+
+
+
+  .sliderText__description {
+    display: none;
+  }
+
+}
+
+@media screen and (min-width: 480px) and (max-width: 767px) {
+
+  .bg-slider {
+    height: 246px;
+    box-sizing: border-box;
+    background: rgba(0, 0, 0, 0.2);
+    font-size: 0;
+    overflow: visible;
+  }
+
+  .wrap-slider {
+    position: relative;
+    min-width: 480px;
+    margin-top: 97px;
+  }
+
+  .wrap-slider::before {
+    position: absolute;
+    content: "";
+    display: inline-block;
+    width: 26px;
+    height: 37px;
+    left: 0;
+    top: 106px;
+    background: url(../img/left-narrow-320.png) center center no-repeat;
+  }
+
+  .wrap-slider::after {
+    position: absolute;
+    content: "";
+    display: inline-block;
+    width: 26px;
+    height: 37px;
+    right: 20px;
+    top: 106px;
+    background: url(../img/right-narrow-320.png) center center no-repeat;
+  }
+
+  .sliderText {
+    display: inline-block;
+    position: relative;
+    width: 208px;
+    height: 52px;
+    margin-top: 96px;
+    margin-left: 40px;
+    vertical-align: top;
+  }
+
+  .sliderText__caption {
+    height: 36px;
+    margin: 0;
+    color: #fefefe;
+    font-family: "League Gothic Regular", "Open Sans", Arial, sans-serif;
+    font-size: 36px;
+    text-shadow: 0 2px 2px rgba(0, 0, 0, 0.3);
+  }
+
+  .sliderText__moto {
+    height: 18px;
+    margin: 0;
+    color: #edbfff;
+    font-family: "League Gothic Regular", "Open Sans", Arial, sans-serif;
+    font-size: 18px;
+    overflow: hidden;
+  }
+
+
+
+  .sliderText__description {
+    display: none;
+  }
+
+  .sliderImg {
+    position: absolute;
+    display: inline-block;
+    width: 192px;
+    height: 268px;
+    background: url(../img/iphone-480.png) center no-repeat;
+  }
+
+}
+
+
+/*.img-slider::before {
+  display: inline-block;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: -71px;
+  content: "";
+  width: 75px;
+  height: 225px;
+  background: url(../img/iphone-4-copy.png);
+}*/
+/*.play-button {
+  position: absolute;
+  width: 76px;
+  height: 76px;
+  background: url(../img/white-triangle.png) left 30px top 25px no-repeat, url(../img/purple-circle.png) center center no-repeat, url(../img/light-purple-circle.png) center center no-repeat;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%)  translateY(-58%);
+}*/
+
+
+
+/*.description-slider {
+  margin-right: 192px;
+  color: #ffffff;
+  font-family: "Open Sans";
+  font-size: 18px;
+  font-weight: 300;
+}*/

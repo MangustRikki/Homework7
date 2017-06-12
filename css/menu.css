@@ -1,0 +1,121 @@
+/*style for header's menu*/
+
+/*style for menu for all site layouts*/
+
+
+.menu__link {
+  box-sizing: border-box;
+  height: 36px;
+  padding: 6px 7px;
+  color: #ffffff;
+  font-family: "League Gothic Regular", "Open Sans", Arial, sans-serif;
+  font-size: 24px;
+  text-shadow: 1px 2px 2px rgba(0, 0, 0, 0.4);
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+
+@media screen and (min-width: 320px) and (max-width: 767px) {
+
+  .menu--mobile {
+    position: absolute;
+    margin-top: 25px;
+    visibility: hidden;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 246px;
+    height: 259px;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
+    border: 1px solid #051116;
+    border-radius: 7px;
+    background-color: rgba(54, 41, 62, 0.9);
+    text-align: center;
+    transition: visibility 0s linear 0.2s;
+    z-index: 100;
+  }
+
+  .menu--mobile:hover {
+    visibility: visible;
+  }
+
+  .menu__item--mobile {
+    display: block;
+    box-sizing: border-box;
+    height: 43px;
+    line-height: 43px;
+    box-shadow: inset 0 -1px 0 rgba(105, 82, 114, 0.59);
+  }
+
+  /*тень не видно когда, меню скрыто*/
+
+  .menu:hover .menu__item--mobile {
+    box-shadow: inset 0 -1px 0 rgba(105, 82, 114, 0.59);
+  }
+
+  .menu__item--mobile:first-child {
+    visibility: visible;
+    height: 47px;
+    box-shadow: none;
+  }
+
+  .menu__item--mobile:last-child {
+    height: 40px;
+  }
+
+  .menu__item--mobile:first-of-type .menu__link--mobile {
+    border-bottom: 2px solid #edbfff;
+  }
+
+  .menu__item--mobile:hover {
+    box-sizing: border-box;
+    background: linear-gradient(to bottom, rgba(42,32,48,1) 0%,rgba(43,33,49,1) 31%,rgba(42,32,48,1) 60%,rgba(39,29,46,1) 71%,rgba(39,30,46,1) 100%);
+    border-bottom: 2px solid #edbfff;
+  }
+
+  /*скругленные уголки для верхнего меню вверху и внизу*/
+
+  .menu__item--mobile:first-child:hover {
+    border-radius: 7px 7px 0 0;
+  }
+
+  /*.menu__item--mobile:last-child:hover {
+    border-radius: 0 0 7px 7px;
+  }*/
+
+  .menu__item--mobile:first-of-type .menu__link--mobile:hover {
+    border: none;
+  }
+}
+
+@media screen and (min-width:768px) {
+
+  .menu {
+    width: 632px;
+    margin-top: 38px;
+  }
+
+  .menu__item {
+    float: left;
+  }
+
+  .menu__link {
+    margin-left: 35px;
+  }
+
+  .menu__item:first-child .menu__link {
+    margin-left: 0;
+  }
+
+  .menu__link:hover {
+    border-bottom: 2px solid #edbfff;
+  }
+
+ }
+
+ @media screen and (min-width:960px) {
+   .menu {
+     display: inline-block;
+     margin-left: 125px;
+   }
+ }

@@ -140,8 +140,10 @@
     position: absolute;
     display: inline-block;
     width: 192px;
-    height: 268px;
-    background: url(../img/iphone-480.png) center no-repeat;
+    height: 275px;
+    top: -10px;
+    background: url(../img/iphone-480.png);
+    background-size: cover;
   }
 
 }

@@ -31,7 +31,7 @@
 
 @media screen and (min-width:768px) and (max-width: 959px) {
   .header {
-    width: 768px;
+    min-width: 768px;
     margin: 0 auto;
     overflow: hidden;
   }
@@ -39,16 +39,21 @@
   /*layout logo in header*/
 
   .logo {
-    margin: 70px auto 0;
+    margin: 70px 0 0 23px;
     text-align: left;
   }
 }
 
 @media screen and (min-width:960px) {
   .header {
-    width: 960px;
+    min-width: 960px;
     margin: 0 auto;
     overflow: hidden;
+  }
+
+  .container-logo-menu {
+    max-width: 960px;
+    margin: 0 auto;
   }
 
   /*layout logo in header*/

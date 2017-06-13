@@ -76,17 +76,22 @@
 
   .wrap-slider {
     position: relative;
-    min-width: 480px;
+    height: 246px;
+    width: 85.41%;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 0;
     margin-top: 97px;
+    text-align: center;
   }
 
-  .wrap-slider::before {
+  /*.wrap-slider::before {
     position: absolute;
     content: "";
     display: inline-block;
     width: 26px;
     height: 37px;
-    left: 0;
+    right: 100%;
     top: 106px;
     background: url(../img/left-narrow-320.png) center center no-repeat;
   }
@@ -97,18 +102,17 @@
     display: inline-block;
     width: 26px;
     height: 37px;
-    right: 20px;
+    right: 0;
     top: 106px;
     background: url(../img/right-narrow-320.png) center center no-repeat;
-  }
+  }*/
 
   .sliderText {
     display: inline-block;
     position: relative;
-    width: 208px;
-    height: 52px;
+    width: 201px;
+    height: 51px;
     margin-top: 96px;
-    margin-left: 40px;
     vertical-align: top;
   }
 
@@ -133,25 +137,206 @@
 
 
   .sliderText__description {
-    display: none;
+    display: block;
   }
 
   .sliderImg {
-    position: absolute;
+    position: relative;
     display: inline-block;
     width: 192px;
-    height: 275px;
-    top: -10px;
+    height: 268px;
+    top: -15px;
     background: url(../img/iphone-480.png);
     background-size: cover;
   }
 
 }
 
+@media screen and (min-width:768px) and (max-width: 959px) {
+
+  .menu {
+    overflow: hidden;
+  }
+  .bg-slider {
+    height: 400px;
+    width: 100%;
+    margin-top: 81px;
+    box-sizing: border-box;
+    background: rgba(0, 0, 0, 0.2);
+    font-size: 0;
+    overflow: visible;
+  }
+
+  .wrap-slider {
+    position: relative;
+    height: 400px;
+    width: 88.15%;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 0;
+    text-align: center;
+  }
+
+  /*.wrap-slider::before {
+    position: absolute;
+    content: "";
+    display: inline-block;
+    width: 26px;
+    height: 37px;
+    right: 100%;
+    top: 106px;
+    background: url(../img/left-narrow-320.png) center center no-repeat;
+  }
+
+  .wrap-slider::after {
+    position: absolute;
+    content: "";
+    display: inline-block;
+    width: 26px;
+    height: 37px;
+    right: 0;
+    top: 106px;
+    background: url(../img/right-narrow-320.png) center center no-repeat;
+  }*/
+
+  .sliderText {
+    display: inline-block;
+    position: relative;
+    width: 272px;
+    height: 180px;
+    margin-top: 102px;
+    vertical-align: top;
+    text-align: left;
+  }
+
+  .sliderText__caption {
+    height: 48px;
+    margin: 0;
+    color: #fefefe;
+    font-family: "League Gothic Regular", "Open Sans", Arial, sans-serif;
+    font-size: 48px;
+    text-shadow: 0 2px 2px rgba(0, 0, 0, 0.3);
+  }
+
+  .sliderText__moto {
+    height: 24px;
+    width: 272px;
+    margin: 0;
+    color: #edbfff;
+    font-family: "League Gothic Regular", "Open Sans", Arial, sans-serif;
+    font-size: 24px;
+    overflow: hidden;
+  }
+
+
+
+  .sliderText__description {
+    display: block;
+    height: 96px;
+    color: #ffffff;
+    font-family: "Open Sans" Arial, sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 30px;
+    line-height: 24px;
+    overflow: hidden;
+  }
+
+  .sliderImg {
+    position: relative;
+    display: inline-block;
+    width: 267px;
+    height: 383px;
+    top: -22px;
+    background: url(../img/iphone-768.png)  no-repeat;
+    background-size: cover;
+  }
+
+  .star {
+    position: absolute;
+    left: 112px;
+    top: 40px;
+    width: 42px;
+    height: 42px;
+    background: url(../img/star-768.png);
+    background-size: contain;
+  }
+}
+
+@media screen and (min-width:960px) {
+
+  .bg-slider {
+    height: 400px;
+    width: 100%;
+    margin-top: 172px;
+    background: rgba(0, 0, 0, 0.2);
+  }
+
+  .wrap-slider {
+    position: relative;
+    height: 400px;
+    width: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 0;
+    text-align: center;
+  }
+
+  .sliderText {
+    display: inline-block;
+    position: relative;
+    width: 502px;
+    height: 231px;
+    margin-top: 102px;
+    vertical-align: top;
+    text-align: left;
+  }
+
+  .sliderText__caption {
+    height: 60px;
+    margin: 0;
+    color: #fefefe;
+    font-family: "League Gothic Regular", "Open Sans", Arial, sans-serif;
+    font-size: 60px;
+    text-shadow: 0 2px 2px rgba(0, 0, 0, 0.3);
+  }
+
+  .sliderText__moto {
+    height: 32px;
+    width: 272px;
+    margin: 0;
+    color: #edbfff;
+    font-family: "League Gothic Regular", "Open Sans", Arial, sans-serif;
+    font-size: 32px;
+    overflow: hidden;
+  }
+
+  .sliderText__description {
+    display: block;
+    color: #ffffff;
+    font-family: "Open Sans", Arial, sans-serif;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 30px;
+    line-height: 27px;
+    overflow: hidden;
+  }
+
+  .sliderImg {
+    position: relative;
+    display: inline-block;
+    width: 267px;
+    height: 383px;
+    top: -22px;
+    background: url(../img/iphone-768.png)  no-repeat;
+    background-size: cover;
+  }
+}
+
 
 /*.img-slider::before {
   display: inline-block;
-  position: absolute;
+  position: absolut48
   top: 50%;
   transform: translateY(-50%);
   left: -71px;
